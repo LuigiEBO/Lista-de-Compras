@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./assets/logo-icon.svg">
+</head>
+<body>
+    <header>
+        <img src="./assets/logo-icon.svg" alt="icone da logo">
+        <h1 class="title">quicklist</h1>
+    </header>
+    <main>
+        <div class="back">
+            <div class="icon"><-</div>
+            <span class="link">Voltar</span>
+        </div>
+        <div class="content">
+            <h1 class="title">Compras da semana</h1>
+            <div class="add">
+                <input type="text" id="addItem" placeholder="Adicione um novo item">
+                <button class="label" id="sendItem">Adicionar item</button>
+            </div>
+
+            <div class="list" id="list">
+                <!-- Exemplo de estrutura de cada item
+                <div class="list-item">
+                    <div>
+                        <div class="check"><img src="./assets/check-icon.svg" alt=""></div>
+                        <p>Pão de forma</p>
+                    </div>
+                    <img src="./assets/trash-icon.svg" alt="">
+                </div>-->
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

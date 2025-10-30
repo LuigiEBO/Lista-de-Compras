@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-primary);
+}
+header {
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    & h1 {
+        color: var(--content-secondary);
+    }
+}
+main {
+    width: 39.2rem;
+    .back {
+        display: flex;
+        color: var(--color-brand);
+        align-items: center;
+        gap: 0.25rem;
+        margin: 2rem 0;
+        cursor: pointer;
+        .icon {
+            size: 20;
+        }
+    }
+    .content {
+        h1 {
+        margin: 1rem 0;
+        }
+        .add {
+            display: flex;
+        }
+        input {
+            width: 100%;
+            border: 1px solid var(--border-primary);
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            margin-right: 1rem;
+        }
+        input:hover {
+            border: 1px solid var(--border-hover);
+        }
+        input:focus {
+            border: 2px solid var(--color-brand);
+            outline: none;
+        }
+        button {
+            color: #fff;
+            background-color: var(--color-brand);
+            padding: 0.75rem;
+            border: none;
+            border-radius: 0.75rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: var(--color-brand-hover);
+        }
+        .list {
+            margin: 2rem 0 ;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: 0.875rem;
+            .list-item {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: var(--background-secondary);
+                padding: 0.75rem;
+                border-radius: 0.5rem;
+                div { 
+                    display: flex;
+                    gap: 0.25rem;
+                    .check {
+                        padding: 0.25rem;
+                        border: 1px solid var(--border-primary);
+                        background-color: #fff;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        img {
+                            display: flex;
+                            align-self: center;
+                        }
+                    }
+                    .check:hover {
+                        border: 1px solid gray;
+                    }
+                    .check.ok {
+                        border: none;
+                        background-color: var(--color-brand);
+                    }
+                }
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 750px) {
+    main {
+        width: 20rem;
+    }
+}
