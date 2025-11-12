@@ -5,9 +5,9 @@ const input = document.getElementById('addItem')
 let removeButton = document.getElementById('remove')
 let item = document.getElementById('remove')
 
-// Quando a página carrega, pega a lista salva
 //Função para adicionar item na lista
 sendItem.onclick = () => {
+    // criando toda estrutura do item
     const value = input.value
     const createItem = document.createElement('div')
     const createBox = document.createElement('div')
